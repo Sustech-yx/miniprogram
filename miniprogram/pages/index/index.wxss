@@ -1,0 +1,12 @@
+.view{
+  width: 750rpx;
+  background: #f1f3d8;
+}
+.axi{
+  width: 750rpx;
+  background: #f1f3d8;
+}
+
+.center{
+  text-align: center;
+}

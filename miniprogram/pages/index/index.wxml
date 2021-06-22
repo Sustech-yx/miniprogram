@@ -1,0 +1,23 @@
+<!--wxml-->
+<view class="page">
+    <view>
+        <view class="center">Drag the slider to change your current speed!</view>
+    </view>
+    <view>
+        <view>
+            <slider bindchanging="speed" min="-99.999" max="99.999" step="0.001"/>
+        </view>
+    </view>
+    <view>
+      <view class="center"><text>If you are now travel at 
+      {{speed}}% the speed of light.</text></view>
+    </view>
+    <view>
+        <canvas
+        type="2d"
+        id="myCanvas"
+        style="width: 750rpx; height: 240px;"
+        bindtouchstart="touchstart"
+    ></canvas>
+    </view>
+</view>
