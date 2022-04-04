@@ -5,19 +5,30 @@
     </view>
     <view>
         <view>
-            <slider bindchanging="speed" min="-99.999" max="99.999" step="0.001"/>
+            <slider bindchanging="speed" bindchange="speed" min="-99.999" max="99.999" step="0.001" value="{{sliderValue}}"/>
         </view>
     </view>
     <view>
       <view class="center"><text>If you are now travel at 
-      {{speed}}% the speed of light.</text></view>
+      {{speed}}% the speed of light relative to the observer.</text></view>
     </view>
     <view>
         <canvas
         type="2d"
         id="myCanvas"
-        style="width: 750rpx; height: 240px;"
+        style="width: 750rpx; height: 480px;"
         bindtouchstart="touchstart"
     ></canvas>
+    </view>
+    <text>\r\n</text>
+    <view class="button-sp-area">
+      <button 
+        type="primary" 
+        plain="true" 
+        size="mini"
+        bindtap="tapbutton"
+      >clear</button>
+    </view>
+    <view class="center"><text>Where the red dot represents the coordinates of your reference system, and the blue dots represent the coordinates of where you are in the eyes of the observer.</text>
     </view>
 </view>
